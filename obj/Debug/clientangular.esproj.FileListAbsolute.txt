@@ -1,0 +1,2 @@
+C:\Programowanie\FitnessApp\clientangular\obj\Debug\clientangular.esproj.SuggestedBindingRedirects.cache
+C:\Programowanie\FitnessApp\clientangular\obj\Debug\clientangular.esproj.CoreCompileInputs.cache
