@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { NextworkoutComponent } from './nextworkout/nextworkout.component';
 import { ProgressComponent } from './progress/progress.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ProgressComponent } from './progress/progress.component';
     NavbarComponent,
     CalendarComponent,
     NextworkoutComponent,
-    ProgressComponent
+    ProgressComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
