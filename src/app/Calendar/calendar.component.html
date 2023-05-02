@@ -1,1 +1,18 @@
-<p>calendar works!</p>
+<div class="calendarDiv">
+    <p class="calendarHeader">{{month}}</p>
+    <table class="calendarTable">
+        <tr>
+            <th>MO</th>
+            <th>TU</th>
+            <th>WE</th>
+            <th>TH</th>
+            <th>FR</th>
+            <th>SA</th>
+            <th>SU</th>
+        </tr>
+        <tr *ngFor="let daysRows of calendarArray">
+            <td *ngFor="let item of daysRows">{{item}}</td>
+        </tr>
+    </table>
+</div>
+

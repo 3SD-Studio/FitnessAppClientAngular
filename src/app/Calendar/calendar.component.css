@@ -1,0 +1,24 @@
+.calendarDiv {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border: 2px solid #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.calendarHeader {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 32pt;
+}
+
+.calendarTable {
+    width: 100%;
+    border-collapse: collapse;
+}

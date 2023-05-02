@@ -7,6 +7,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { NextworkoutComponent } from './nextworkout/nextworkout.component';
 import { ProgressComponent } from './progress/progress.component';
 import { FooterComponent } from './footer/footer.component';
+import { CalendarItemComponent } from './calendar-item/calendar-item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     CalendarComponent,
     NextworkoutComponent,
     ProgressComponent,
-    FooterComponent
+    FooterComponent,
+    CalendarItemComponent
   ],
   imports: [
     BrowserModule
