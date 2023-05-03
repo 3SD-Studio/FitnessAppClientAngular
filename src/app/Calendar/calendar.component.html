@@ -11,7 +11,9 @@
             <th>SU</th>
         </tr>
         <tr *ngFor="let daysRows of calendarArray">
-            <td *ngFor="let item of daysRows">{{item}}</td>
+            <td *ngFor="let item of daysRows">
+                <sd-calendar-item [day]="item"></sd-calendar-item>
+            </td>
         </tr>
     </table>
 </div>

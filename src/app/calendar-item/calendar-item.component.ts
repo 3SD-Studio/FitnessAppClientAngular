@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'sd-calendar-item',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./calendar-item.component.css']
 })
 export class CalendarItemComponent {
-
+  @Input() day: number = 0;
 }

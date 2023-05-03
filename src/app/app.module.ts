@@ -8,6 +8,7 @@ import { NextworkoutComponent } from './nextworkout/nextworkout.component';
 import { ProgressComponent } from './progress/progress.component';
 import { FooterComponent } from './footer/footer.component';
 import { CalendarItemComponent } from './calendar-item/calendar-item.component';
+import { CalendarService } from './calendar.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { CalendarItemComponent } from './calendar-item/calendar-item.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [CalendarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
