@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Routes, RouterModule } from '@angular/router';
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -9,6 +11,12 @@ import { ProgressComponent } from './progress/progress.component';
 import { FooterComponent } from './footer/footer.component';
 import { CalendarItemComponent } from './calendar-item/calendar-item.component';
 import { CalendarService } from './calendar.service';
+import { HomeComponent } from './home/home.component';
+
+
+const rouets = [
+  { path: '', component: HomeComponent },
+]
 
 @NgModule({
   declarations: [
@@ -18,10 +26,13 @@ import { CalendarService } from './calendar.service';
     NextworkoutComponent,
     ProgressComponent,
     FooterComponent,
-    CalendarItemComponent
+    CalendarItemComponent,
+    HomeComponent,
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(rouets)
   ],
   providers: [CalendarService],
   bootstrap: [AppComponent]

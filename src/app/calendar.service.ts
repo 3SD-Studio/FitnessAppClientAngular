@@ -89,7 +89,7 @@ export class CalendarDate {
     }
     else if (date > today) {
       if (Math.random() < 0.40) {
-        return '#77DD77';
+        return '#77CC77';
       }
       return '#f2f2f2';
     }
