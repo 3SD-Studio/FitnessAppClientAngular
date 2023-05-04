@@ -14,7 +14,7 @@ import { CalendarService } from './calendar.service';
 import { HomeComponent } from './home/home.component';
 
 
-const rouets = [
+const routes = [
   { path: '', component: HomeComponent },
   { path: 'test', component: CalendarComponent },
 ]
@@ -33,7 +33,7 @@ const rouets = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(rouets)
+    RouterModule.forRoot(routes)
   ],
   providers: [CalendarService],
   bootstrap: [AppComponent]
