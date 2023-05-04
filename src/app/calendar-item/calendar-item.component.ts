@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CalendarDate } from '../calendar.service';
 
 @Component({
   selector: 'sd-calendar-item',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./calendar-item.component.css']
 })
 export class CalendarItemComponent {
-  @Input() day: number = 0;
+  @Input() day: CalendarDate = new CalendarDate(new Date);
 }

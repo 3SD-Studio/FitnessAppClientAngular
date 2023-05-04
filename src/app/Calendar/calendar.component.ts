@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CalendarService } from '../calendar.service';
+import { CalendarDate, CalendarService } from '../calendar.service';
 
 @Component({
   selector: 'sd-calendar',
@@ -9,7 +9,7 @@ import { CalendarService } from '../calendar.service';
 
 
 export class CalendarComponent {
-    calendarArray : number[][];
+    calendarArray : CalendarDate[][];
     month : string;
 
     constructor(service: CalendarService) { 
