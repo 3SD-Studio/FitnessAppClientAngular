@@ -3,3 +3,13 @@ body{
     margin:0;
     font-family: "Century Gothic";
 }
+
+button {
+    height: 50px;
+    font-family: 'Century Gothic';
+    font-size: 18pt;
+    padding: 0px 30px;
+    background-color: #f2f2f2;
+    border: 2px solid #f4f4f4;
+    border-radius: 10px;
+}
