@@ -13,3 +13,7 @@
     font-size: 20px; 
     line-height: 100%;
 }
+
+.calendarItemDiv a {
+    margin-top: 15px;
+}
