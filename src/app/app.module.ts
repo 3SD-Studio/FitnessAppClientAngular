@@ -16,7 +16,6 @@ import { HomeComponent } from './home/home.component';
 
 const routes = [
   { path: '', component: HomeComponent },
-  { path: 'test', component: CalendarComponent },
 ]
 
 @NgModule({
