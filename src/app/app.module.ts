@@ -12,10 +12,13 @@ import { FooterComponent } from './footer/footer.component';
 import { CalendarItemComponent } from './calendar-item/calendar-item.component';
 import { CalendarService } from './calendar.service';
 import { HomeComponent } from './home/home.component';
+import { CreatorModule } from './creator/creator.module';
+import { MainComponent } from './creator/main/main.component';
 
 
 const routes = [
   { path: '', component: HomeComponent },
+  { path: 'creator', component: MainComponent}
 ]
 
 @NgModule({
@@ -32,6 +35,7 @@ const routes = [
   ],
   imports: [
     BrowserModule,
+    CreatorModule,
     RouterModule.forRoot(routes)
   ],
   providers: [CalendarService],
