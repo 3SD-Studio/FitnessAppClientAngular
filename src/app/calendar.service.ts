@@ -42,52 +42,52 @@ export class CalendarService {
   getMonthString() : string {
     // Array of month names, used to set current month
     let monthNames : string[] = [
-      'January', 'February', 'March', 
-      'April', 'May', 'June', 
+      'January', 'February', 'March',
+      'April', 'May', 'June',
       'July', 'August', 'September',
       'October', 'November', 'December'
     ];
 
-    
     return monthNames[new Date().getMonth()].toUpperCase();
   }
 }
 
 export class CalendarDate {
-  date: Date;
-  colour: string;
+  #date: Date;
+  #colour: string;
 
   constructor(date: Date) {
-    this.date = date;
-    this.colour = this.calculateColour(date);
+    this.#date = date;
+    this.#colour = this.calculateColour();
   }
 
-  get Date() {
-    return this.date;
-  }
-  set Date(value: Date) {
-    this.date = value;
+  get date() {
+    return this.#date;
   }
 
-  get Colour() {
-    return this.colour;
+  set date(value: Date) {
+    this.#date = value;
+  }
+
+  get colour() {
+    return this.#colour;
   }
 
 
-  private calculateColour(date: Date): string {
+  private calculateColour(): string {
     let today = new Date();
 
-    if (date < today) { 
+    if (this.#date < today) {
       if (Math.random() < 0.33) {
         return '#556B2F';
       }
       else if (Math.random() < 0.07) {
         return 'red';
       }
-  
+
       return '#f2f2f2';
     }
-    else if (date > today) {
+    else if (this.#date > today) {
       if (Math.random() < 0.40) {
         return '#77CC77';
       }
@@ -95,6 +95,6 @@ export class CalendarDate {
     }
     else {
       return '#7070ff';
-    } 
+    }
   }
 }
