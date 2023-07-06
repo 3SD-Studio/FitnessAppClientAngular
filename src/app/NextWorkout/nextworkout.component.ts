@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./nextworkout.component.css']
 })
 export class NextworkoutComponent {
-  nextWorkoutDate : string;
-  chosenSet : string;
+  #nextWorkoutDate : string;
+  #chosenSet : string;
 
-  exerciseSetsList = [ 
+  #exerciseSetsList = [
     'Legs',
     'Arms',
     'Chest',
@@ -18,8 +18,32 @@ export class NextworkoutComponent {
   ];
 
   constructor() {
-    this.nextWorkoutDate = new Date().toLocaleDateString();
-    this.chosenSet = this.exerciseSetsList[getRandomInt(5)];
+    this.#nextWorkoutDate = new Date().toLocaleDateString();
+    this.#chosenSet = this.#exerciseSetsList[getRandomInt(5)];
+  }
+
+  get nextWorkoutDate(){
+    return this.#nextWorkoutDate;
+  }
+
+  get chosenSet(){
+    return this.#chosenSet;
+  }
+
+  get exerciseSetsList(){
+    return this.#exerciseSetsList;
+  }
+
+  set nextWorkoutDate(value: string){
+    this.#nextWorkoutDate = value;
+  }
+
+  set chosenSet(value: string){
+    this.#chosenSet = value;
+  }
+
+  set exerciseSetsList(value: string[]){
+    this.#exerciseSetsList = value;
   }
 }
 
