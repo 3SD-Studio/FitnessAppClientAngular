@@ -1,0 +1,11 @@
+#main-content{
+  width: 80%;
+  height: 780px;  /*DO ZMIANY, ŻEBY DZIAŁAŁO RELATYWNIE*/
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom:2%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}

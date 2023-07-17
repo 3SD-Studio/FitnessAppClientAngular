@@ -14,11 +14,13 @@ import { CalendarService } from './calendar.service';
 import { HomeComponent } from './home/home.component';
 import { CreatorModule } from './creator/creator.module';
 import { MainComponent } from './creator/main/main.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const routes = [
   { path: '', component: HomeComponent },
-  { path: 'creator', component: MainComponent}
+  { path: 'creator', component: MainComponent},
+  { path: 'profile', component: ProfileComponent}
 ]
 
 @NgModule({
@@ -31,7 +33,8 @@ const routes = [
     FooterComponent,
     CalendarItemComponent,
     HomeComponent,
-    
+    ProfileComponent,
+
   ],
   imports: [
     BrowserModule,
