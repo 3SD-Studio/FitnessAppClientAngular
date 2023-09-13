@@ -11,21 +11,19 @@ import { ProgressComponent } from './progress/progress.component';
 import { FooterComponent } from './footer/footer.component';
 import { CalendarItemComponent } from './calendar-item/calendar-item.component';
 import { HomeComponent } from './home/home.component';
-import { MainComponent } from './creator/main/main.component';
 import { ProfileComponent } from './profile/profile.component';
-import { ExerciseComponent } from './creator/exercise/exercise.component';
-import { WorkoutComponent } from './creator/workout/workout.component';
+import { CreatorComponent } from './creator/creator.component';
+import { CreateExerciseComponent } from './create-exercise/create-exercise.component';
+import { CreateWorkoutComponent } from './create-workout/create-workout.component';
 
 
 import { CalendarService } from './calendar.service';
 
-
 const routes = [
   { path: '', component: HomeComponent },
-  { path: 'creator', component: MainComponent, children:[
-    {path: 'exercise', component: ExerciseComponent},
-    {path: 'workout', component: WorkoutComponent}
-  ]},
+  { path: 'creator', component: CreatorComponent },
+  { path: 'creator/exercise', component: CreateExerciseComponent},
+  { path: 'creator/workout', component: CreateWorkoutComponent},
   { path: 'profile', component: ProfileComponent}
 ]
 
@@ -40,8 +38,9 @@ const routes = [
     CalendarItemComponent,
     HomeComponent,
     ProfileComponent,
-    ExerciseComponent,
-    WorkoutComponent
+    CreateExerciseComponent,
+    CreateWorkoutComponent,
+    CreatorComponent
   ],
   imports: [
     BrowserModule,
